@@ -25,9 +25,19 @@ main > div{
     padding: 0.4vh;
     margin: 10px 20px;
     margin-bottom: 2% !important;
-    background-color: purple;
+    background-color: green;
     width: 100%;
     
+}
+main > div:first-child{
+    position: relative;
+    top: -14em;
+}
+main > div > img{
+    object-fit: cover;
+    width: 100%;
+    height: 50%;
+
 }
 
 /* // Small devices (landscape phones, 576px and up) */

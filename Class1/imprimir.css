@@ -13,6 +13,9 @@ main{
    border: solid black 3px;
    
 }
+main > div > img{
+    object-fit: cover;
+}
 
 /* estilos footer */
 footer{
@@ -27,6 +30,7 @@ main > div{
     margin-bottom: 2% !important;
     background-color: purple;
     width: 100%;
+   
     
 }
 

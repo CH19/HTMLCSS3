@@ -16,4 +16,6 @@ Media Query importantes:
   .custom-class {
     display: block;
   }
-}
+
+
+La tensión entre Venezuela y la Republica de Guyana ha llegado a un punto crítico tras el hallazgo de un peloton Venezolano muerto en territorio guyanes y con la desaparacion del general [nombre general]. El cadáver fue encontrado en la frontera de ambos países la mañana del lunes especificamente en la frontera con la region Potaro-Siparuni. La muerte del soldado ha generado una crisis en la región, con guyana acusando a Venezuela de invadir su territorio.Venezuela, en cambio, afirma que el soldado fue asesinado a sangre fría por soldados Guyanese. El gobierno de Venezuela ha exigido que Guyana se disculpe y, al mismo tiempo, ha reforzado sus fuerzas militares a lo largo de la frontera. Las tensiones entre los dos países han aumentado en los últimos meses, con Guyana amenazando con una guerra si Venezuela no cede a sus demandas. La ONU ha condenado el nuevo lanzamiento de misiles por parte de Guyana y ha pedido a los dos países que se sienten a dialogar para evitar una escalada militar. Los soldados movilizados entre ambas fronteras se encuentran en su mayor punto de tension, sin embargo nadie ha abierto fuego todavia. Esperan ordenes
