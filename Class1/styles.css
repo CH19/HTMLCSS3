@@ -1,6 +1,11 @@
 *{
    /* box-sizing: border-box; */
 }
+:root{
+    --ColorHeader: lightgray;
+    --RojoAirnb: #FF385C;
+    --White: #fff;
+}
 
 /* posicion del header */
 header{
@@ -37,23 +42,55 @@ main > div > img{
     
 
 }
-.input{
-    height: 10.139416983523448vh;
-    width: 90%;
-    
+.input{ /*estilos del encabezado de la pagina*/
+    display: flex;
+    justify-content: space-around;
+    background-color: purple;
+    align-items: center;
+    height: 45%;
 }
 .input > img{
   height: 100%;
   width: 20%;
     object-fit: cover;
 }
-.presentation{
+.input > div:first-of-type{ /*aqui se esta comenzando a dar estilos al encabezado principal y central del header*/
+    display: flex;
+    justify-content: space-around;
+    border: solid var(--ColorHeader) 1px;
+    border-radius: 35px;
+    padding:  8px 12px;
+}
+.input > div:first-of-type > div{
+    padding: 0 6px;
+}
+.input > div:first-of-type > div:first-child, .input > div:first-of-type > div:nth-child(2){ /*Color del borde en el header principal*/
+    border-right: solid var(--ColorHeader) 0.3px ;
+    justify-content: center;
+    align-items: center;
+}
+.input > div:first-of-type > div:nth-child(3){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input > div:first-of-type > div:nth-child(3) > div{
+    background-color: var(--RojoAirnb);
+    border-radius: 50px;
+    color: var(--White);
+    padding: 3px 3px 0;
+ 
+}
+.input > div:last-child, .input > div:nth-child(3){
+    display: flex;
+}
+/* .presentation{
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     flex-wrap: wrap-reverse;
     align-items: start;
-}
+} */
 
 /* // Small devices (landscape phones, 576px and up) */
 @media screen and (min-width: 576px) { 
