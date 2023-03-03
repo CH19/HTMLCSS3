@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+   .cont{
+        display: flex;
+        height: 30vh;
+        background-color: aquamarine;    
+
+        align-items: center;
+        justify-content: space-around;
+        color: red;
+    }
+    .cont >div{
+        height: 100px;
+        background-color:purple;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        font-size: .7em;
+       
+    }
+    .cont >div:nth-child(2){
+        flex-direction: row-reverse;
+        flex-grow: 0;
+    }
+    .cont > div:nth-child(4){
+        flex-shrink: inherit;
+        align-self: auto;
+        background-color: green;
+    }
+    .item2{
+        background-color: blue;
+        width: 10vw;
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+    }
+</style>
+</head>
+<body>
+    <div class="cont"> 
+        <div style="order: 3;">1</div>
+        <div style="order: 2;">2</div>
+        <div style="order: 4;">3</div>
+        <div style="order: 0;">4La propiedad CSS flex-shrink especifica el factor de contracción de un elemento flexible. Los flex items se encogerán para llenar el contenedor de acuerdo a su número flex-shrink, cuando el tamaño por defecto de los flex items sea mayor al de su contenedor flex container.</div>
+        <div style="order: 5;;">5</div>
+    </div>
+    <div class="item2"></div>
+</body>
+</html>
