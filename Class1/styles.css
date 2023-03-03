@@ -1,5 +1,6 @@
 *{
    /* box-sizing: border-box; */
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 :root{
     --ColorHeader: lightgray;
@@ -45,14 +46,14 @@ main > div > img{
 .input{ /*estilos del encabezado de la pagina*/
     display: flex;
     justify-content: space-around;
-    background-color: purple;
+    background-color: transparent;
     align-items: center;
     height: 45%;
 }
 .input > img{
   height: 100%;
   width: 20%;
-    object-fit: cover;
+    object-fit: contain;
 }
 .input > div:first-of-type{ /*aqui se esta comenzando a dar estilos al encabezado principal y central del header*/
     display: flex;
@@ -81,8 +82,14 @@ main > div > img{
     padding: 3px 3px 0;
  
 }
-.input > div:last-child, .input > div:nth-child(3){
+.input > div:last-child{
     display: flex;
+    padding: 10px 0;
+    justify-content: space-between;
+    width: 20%;
+}
+.input > div:last-child > div:last-child{
+    display: inline-block;
 }
 /* .presentation{
     display: flex;
