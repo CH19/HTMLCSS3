@@ -6,6 +6,7 @@
     --ColorHeader: lightgray;
     --RojoAirnb: #FF385C;
     --White: #fff;
+    --Black: rgba(0,0,0,0.22);
 }
 
 /* posicion del header */
@@ -37,8 +38,6 @@ main > div{
     margin-bottom: 2% !important;
     background-color: green;
     width: 100%;
-     
-    
 }
 
 main > div > img{
@@ -75,6 +74,11 @@ main > div > img{
     border-right: solid var(--ColorHeader) 0.3px ;
     justify-content: center;
     align-items: center;
+}
+.presentation:hover{
+    box-shadow: 8px 15px 0px 0px var(--Black);
+    -webkit-box-shadow: 8px 15px 0px 0px var(--Black);
+    -moz-box-shadow: 8px 15px 0px 0px var(--Black);
 }
 .input > div:first-of-type > div:nth-child(3){
     display: flex;
@@ -113,6 +117,9 @@ main > div > img{
 .headfilter > div:first-child > div img{ /*para ajustar el tamaño de las imagenes en relacion al contenedor y que no sean tan grandes*/
     width: 30px;
     object-fit: 1 / 1;
+}
+.headfilter > div > div:hover{
+    border-bottom: solid var(--Black) 2px;
 }
 .headfilter > div:first-child > div span{ /*reduciendo un poco la fuente para que se vea mas estetico*/
     font-size: .75em;
