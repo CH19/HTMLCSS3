@@ -106,12 +106,44 @@ main > section > article:last-child{
 
 
 
-@media screen and (min-width: 576px) { 
+@media screen and (max-width: 640px) { 
     *{
         
     }
- }
-
+    .BigContainer{
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    } 
+    header{
+        
+        width: 100%;
+        height: 15%;
+        background-color: var(--Morado);
+        flex-direction: column;
+        justify-content: center;
+        height: 70vh;
+    }
+    header > div:first-child{
+        margin: 15px 0;
+    }
+    header > div:last-child{
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    header > div:last-child > div{
+        justify-content: center;
+        flex-direction: row;
+        margin: 15px 0;
+    }
+    main > section{
+        width: 100vw;
+        justify-content: center;
+    }
  /* Medium devices (tablets, 768px and up)
 /* @media (min-width: 768px) {
     *{
