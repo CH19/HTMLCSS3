@@ -57,8 +57,80 @@ header > div:last-child > div span{
 }
 
  main{
-    width: 70%;
+    width: 50%;
     height: 100%;
-    background-color: red;
+    /* background-color: red; */
     display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
 }
+main > div:first-child{
+    display: block;
+    margin: 0 30px;
+    font-size: 2em;
+    color: var(--Morado);
+}
+main > section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px 30px 30px 15px;
+}
+main > section > article{
+    display: flex;
+  
+    margin: 10px 0;
+    align-items: center;
+    flex-direction: column;
+    color: var(--LetrasHeader);
+}
+main > section > article img{
+    object-fit: 2/1;
+}
+main > section > article:first-child{
+    background-color: var(--Rosado);
+}
+main > section > article:nth-child(2){
+    background-color: var(--Azul);
+}
+main > section > article:nth-child(3){
+    background-color: var(--Morado);
+}
+main > section > article:last-child{
+    background-color: var(--Naranjaclaro);
+}
+
+
+
+
+
+/* 
+@media (min-width: 576px) { 
+    *{
+        
+    }
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+/* @media (min-width: 768px) {
+    *{
+        
+    }
+} */
+
+/* Large devices (desktops, 992px and up)  */
+/* @media (min-width: 992px) {
+    *{
+        width: 30%;
+    }
+ } */
+/* 
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    *{
+        width: 30%;
+    }
+ } */
+
+
