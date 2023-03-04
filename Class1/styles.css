@@ -16,8 +16,12 @@ header{
 main{
    height: 65.2vh ; 
    padding: 0.4vh;
-   border: solid black 3px;
-   
+   /* border: solid black 3px; */
+   margin: 0 10px;
+   display: flex;
+
+   justify-content: space-between;
+   flex-wrap: wrap;
 }
 
 /* estilos footer */
@@ -27,12 +31,13 @@ footer{
 }
 main > div{
     height: 85%;
-    display: inline-block;
+    display: flex;
     padding: 0.4vh;
-    margin: 10px 20px;
+    
     margin-bottom: 2% !important;
     background-color: green;
     width: 100%;
+     
     
 }
 
@@ -43,6 +48,7 @@ main > div > img{
     
 
 }
+/*INPUT DEL ENCABEZADO*/
 .input{ /*estilos del encabezado de la pagina*/
     display: flex;
     justify-content: space-around;
@@ -88,8 +94,40 @@ main > div > img{
     justify-content: space-between;
     width: 20%;
 }
-.input > div:last-child > div:last-child{
-    display: inline-block;
+
+/*BARRA DE SELECCION DE CASAS*/
+.headfilter{ /*para aplicar contenedores de padre flex a los hijos de estos contenedores*/
+    display: flex;
+}
+.headfilter >div:first-child{ /*para tener un mejor control sobre los hijos del flex aqui*/
+    display: flex;
+    padding: 40px;
+    width: 80%;
+    justify-content: space-between;
+}
+.headfilter > div:first-child > div{ /*para que el texto se vea completo sin importar la imagen*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.headfilter > div:first-child > div img{ /*para ajustar el tamaño de las imagenes en relacion al contenedor y que no sean tan grandes*/
+    width: 30px;
+    object-fit: 1 / 1;
+}
+.headfilter > div:first-child > div span{ /*reduciendo un poco la fuente para que se vea mas estetico*/
+    font-size: .75em;
+}
+.headfilter >div:last-child{
+    display: flex;
+    width: 10%;
+    justify-content: flex-end;
+    align-items: center;
+   
+}
+.headfilter >div:last-child > div{
+    border: solid var(--ColorHeader) 2px;
+    padding: 20px;
+    border-radius: 15px;
 }
 /* .presentation{
     display: flex;
