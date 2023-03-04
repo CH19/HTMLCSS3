@@ -1,0 +1,64 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --Morado: #5e42a6;
+--Rosado: #fe7472;
+--Azul: #749ffe;
+--Naranjaclaro: #ffb274;
+--LetrasHeader: #fff;
+}
+.BigContainer{
+    width: 95vw;
+    height: 95vh;
+    display: flex;
+}
+header{ /*configurando el aspecto principal de la barra de navegacion*/
+    width: 23%;
+    height: 100%;
+    background-color: var(--Morado);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--LetrasHeader);
+}
+header > div:first-child{ /*dandole estilos al contenedor que tiene el logo*/
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+ header > div:first-child > img{ /*colocando como fit al logo dentro del contenedor*/
+    height: 10vh;
+    object-fit: 2/1;
+
+} 
+header > div:last-child{
+    display: flex;
+    width: 85%;
+    
+    flex-direction: column;
+    padding: 0px;
+    font-size: 1.5em;
+  
+}
+header > div:last-child > div{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    margin: .5em;   border-bottom: solid var(--LetrasHeader) 1px;
+    
+}
+header > div:last-child > div span{
+    float: right;
+}
+
+ main{
+    width: 70%;
+    height: 100%;
+    background-color: red;
+    display: flex;
+}
