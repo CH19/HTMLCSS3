@@ -52,6 +52,10 @@ header > div:last-child > div{
     margin: .5em;   border-bottom: solid var(--LetrasHeader) 1px;
     
 }
+header > div:last-child > div:hover, main > div:first-child:hover{
+    opacity: 75%;
+    transition: .5s;
+}
 header > div:last-child > div span{
     float: right;
 }
@@ -74,12 +78,11 @@ main > section{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 30px 30px 30px 15px;
+    justify-content: space-evenly;
 }
 main > section > article{
     display: flex;
-  
+    position: relative;
     margin: 10px 0;
     align-items: center;
     flex-direction: column;
@@ -100,19 +103,86 @@ main > section > article:nth-child(3){
 main > section > article:last-child{
     background-color: var(--Naranjaclaro);
 }
+/*TARJETA CORPORATIVA*/
+.message{
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 280px;
+    height: 210px;
+    
+    z-index: 4;
+}
+.b1{
+    background-color: var(--Rosado); opacity: 80%;
+}
+.b2{
+    background-color: var(--Azul); opacity: 80%;
+}
+.b3{
+    background-color: var(--Morado); opacity: 80%;
+}
+.b4{
+    background-color: var(--Naranjaclaro); opacity: 80%;
+}
+main > section > article:hover > .message{
+    display: block;
+    transition: 1s;
+}
+
+/* main > section > article:hover > img{
+    display: none;
+} */
 
 
 
 
 
- 
-@media screen and (min-width: 576px) { 
-    {
+
+
+@media screen and (max-width: 560px) { 
+    *{
         
     }
- }
+    .BigContainer{
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    } 
+    header{
+        
+        width: 100%;
+        height: 15%;
+        background-color: var(--Morado);
+        flex-direction: column;
+        justify-content: center;
+        height: 70vh;
+    }
+    header > div:first-child{
+        margin: 15px 0;
+    }
+    header > div:last-child{
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    header > div:last-child > div{
+        justify-content: center;
+        flex-direction: row;
+        margin: 15px 0;
+    }
+    main > section{
+        width: 100vw;
+        justify-content: center;
+    }
+}
 
- /* Medium devices (tablets, 768px and up) */
+
+ /* Medium devices (tablets, 768px and up)
 /* @media (min-width: 768px) {
     *{
         
@@ -120,7 +190,63 @@ main > section > article:last-child{
 } */
 
 /* Large devices (desktops, 992px and up)  */
-@media screen and (min-width: 760px) and (max-width: 991px){
+@media screen and (min-width: 600px) and (max-width: 1291px) and (orientation: portrait){
+    .BigContainer{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+    header{
+        width: 100%;
+        height: 15%;
+        background-color: var(--Morado);
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header > div:first-child{
+        width: 15vw;
+        border: none;
+       margin-left: 30px;
+
+    }
+    header > div:first-child img{
+        width: 100%;
+        object-fit: 1/1;
+    }
+    header > div:last-child{
+        flex-direction: row;
+        font-size: 1.2em;
+        margin: 10px;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+        
+    }
+    header > div:last-child > div{
+        flex-direction: row;
+        margin: 0px;
+        width: 20%;
+        border: none;
+    }
+    main{
+        width: 100%;
+        height: 50%;
+        flex-direction: column;
+        
+    }
+    main > section{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-evenly;
+    }
+    main > section > article {
+        align-items: center;
+    }
+    main > section > article img{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 991px) and (orientation: landscape){
     *{
 
     }
