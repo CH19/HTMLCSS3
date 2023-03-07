@@ -129,6 +129,9 @@ main > section > article:last-child{
 main > section > article:hover > .message{
     display: block;
     transition: 1s;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.23);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.23);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.23);
 }
 
 /* main > section > article:hover > img{
@@ -307,6 +310,9 @@ main > section > article:hover > .message{
         width: 100%;
     }
     
+ }
+ @media screen and (min-width: 990px) {
+
  }
 /* 
 // X-Large devices (large desktops, 1200px and up)

@@ -1,0 +1,42 @@
+body{
+    font-family: 'Segoe UI';
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 100px repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header header header header"
+    "main main main main main main"
+    "footer footer footer footer footer ."
+}
+header{
+    grid-area: header;
+    /* display: flex;
+    padding: 0 10%;
+    justify-content: space-between;
+    align-items: center; */
+    background-color: red;
+}
+/* header > nav{
+    display: flex;
+    width: 60%;
+  
+    justify-content: space-around;
+    color: blue;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+header > nav a{
+    text-decoration: none;
+} */
+main{
+    grid-area: main; background-color: aqua;
+}
+/* aside{
+    grid-area: aside;
+} */
+footer{
+    grid-area: footer; background-color: bisque;
+}
+@media (max-width: 768px){
+
+}
