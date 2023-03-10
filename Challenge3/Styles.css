@@ -10,9 +10,10 @@ body{
     display: grid;
     height: 97vh;
     grid-template-columns: repeat(2 1fr);
-    grid-template-rows: 15vh 1fr 10vh;
+    grid-template-rows: 15vh 1fr 7vh;
     background-color: purple;
     font-family:    var(--Textfont) ;
+    color: white;
 }
 main, footer, header{
     border: solid black 2px;
@@ -63,7 +64,7 @@ main{
     display: flex;
     flex-direction: column;
 }
-main > div{
+main > div:first-of-type{
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -74,3 +75,52 @@ main > div{
     color: var(--orange);
     font-family: var(--TitleFont);
 }
+section{
+    margin: 5rem auto;
+    width: 45vw;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    grid-template-areas: 
+    "card1 card2 card3"
+    "card4 card2 card5"
+    "card6 card2 card7"
+    "card8 card8 card9"
+    ;
+
+}
+section > article{
+    border: solid black 1px;
+}
+.card1{
+    grid-area: card1;
+}
+.card2{
+    grid-area: card2;
+}
+.card3{
+    grid-area: card3;
+}
+.card4{
+    grid-area: card4;
+}
+.card5{
+    grid-area: card5;
+}
+.card6{
+    grid-area: card6;
+}
+.card7{
+    grid-area: card7;
+}
+.card8{
+    grid-area: card8;
+}
+.card9{
+    grid-area: card9;
+}
+/* Medidas del Section en responsive
+width: 90vw;
+height: 50vh; */
