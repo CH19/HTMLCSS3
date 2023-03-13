@@ -8,7 +8,7 @@
 }
 body{
     display: grid;
-    height: 110vh;
+    height: 90vh;
     grid-template-columns: repeat(2 1fr);
     grid-template-rows: 15vh 70vh 10vh;
     font-family:    var(--Textfont) ;
@@ -44,7 +44,11 @@ header > div:last-of-type{
     display: inline-flex;
     justify-content: space-around;
     flex-direction: row;
+    align-items: center;
     flex-wrap: nowrap;
+}
+header > div:last-of-type > span:hover{
+    opacity: 70%;
 }
 header > div:last-of-type > span{
     /* background-color: var(--orange); */
